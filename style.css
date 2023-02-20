@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body,html {
+    height: 100%;
+    background-color: #c7ede8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.1vw;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+/* Header */
+header {
+    height: 25%;
+    width: 100%;
+    background-color: #a0ded6;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-header {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+}
+
+#content-header h1 {
+    font-size: 150%;
+    color: #fff;
+    letter-spacing: 1vw;
+    margin-left: 10%;
+}
+
+/* Formulário */
+
+#forgot-passwork {
+    width: fit-content;
+}
+/**/
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#form form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 2%;
+}
+
+/* Label */
+
+#form form label {
+    font-size: 80%;
+    color: #fff;
+    margin-right: 1%;
+}
+/* Inputs */
+#form .form-group :nth-child(2)  {
+   width: 21vw;
+   height: 5.5vh;
+   padding: 2%;
+}
+
+input:not([type="button"]):focus {
+    background-color: rgb(250, 255, 186);
+    border-radius: 0.4vw;
+    outline: 0;
+    border-color: rgb(134, 161, 250);
+}
+
+input:not([type="button"]) {
+    border-radius: 0.3vw;
+    outline: 0;
+    border: 0.1vw solid rgb(114, 114, 114);
+}
+
+/* Partes do FORM */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 100%;
+}
+
+/* Esqueceu a senha */
+#forgot {
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    margin-top: 5%;
+    font-size: 80%;
+}
+/* Enviar */
+#form .form-group input[type="submit"] {
+   max-width: 70px;
+    display: inline-block;
+    background-color: rgb(97, 218, 177);
+    color: #fff;
+    font-size: 2%;
+    border: 0;
+    cursor: pointer;
+    font-size: 90%;
+}
+
+
+/* Conteúdo Principal */
+
+/* Texto */
+#content {
+    background-color: #c7ede8;
+    text-align: center;
+    padding: 5% 0;
+    display: flex;
+}
+
+#texto-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    width: 50%;
+}
+
+#content #texto-content h2 {
+    font-size: 250%;
+    font-family: 'Amatic SC', cursive;
+    width: 50%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#content #texto-content #ilustracao {
+    width: 60%;
+}
+
+/* Cadastro */
+
+#cadastro {
+    width: 50%;
+    vertical-align: top;
+}
+
+#cadastro form {
+    width: 80%;
+    text-align: left;
+}
+
+#texto-cadastro h1 {
+    font-size: 180%;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+#texto-cadastro p {
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+#texto-cadastro #description {
+
+}
+
+/* Inputs */
+
+#cadastro input{
+    padding: 1%;
+}
+
+#section-nome {
+    display: flex;
+}
+
+#form-cadastro form #Sobrenome {
+    margin-left: 2%;
+}
+
+#form-cadastro form #Nome, #form-cadastro form #Sobrenome {
+    width: 49%;
+    margin-bottom: 1%;
+}
+
+#form-cadastro form #Contato, #form-cadastro form #Senha {
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#form-cadastro form #Senha {
+    margin-bottom: 0;
+}
+
+#label-data {
+    margin-top: 3%;
+    display: block;
+}
+
+#label-data, #Data {
+    font-size: 90%;
+}
+
+#text-date {
+    height: min-content;
+    display: flex;
+    align-items: center;
+    font-size: 80%;
+}
+
+#dialog {
+    background-color: #fff;
+   height: min-content;
+   width: 49%;
+   height: 100%;
+    font-size: 100%;
+    position: absolute;
+    display: none;
+}
+
+#dialog::after {
+    content: '';
+    background-color: rgb(121, 74, 74);
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    top: 1vw;
+    right: -0.5vw;
+    transform: rotate(45deg);
+}
+
+#text-date{
+    transition-delay: 1s;
+    display: inline-block;
+}
+
+#date-group {
+    width: 100%;
+    height: auto;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin-bottom: 3%;
+}
+
+#date-group select {
+    font-size: 1.5vw;
+}
+
+#select-data {
+    display: flex;
+    padding: 0 ;
+}
+
+#date-group select {
+    height: 5.4vh;
+    display: inline-block;
+}
+
+/*  */ 
+label[for="Masculino"] {
+    margin-right: 5%;
+}
+
+#cadastro-terms {
+    margin: 3% 0;
+    font-size: 70%;
+    text-decoration: none;
+}
+
+input[value="Cadastre-se"] {
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 3%;
+    background-color: #39ddb1;
+    border-radius: 0.5vw;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    height: 5vh;
+    cursor: pointer;
+    font-size: 85%;
+    min-width: 70px;
+}
+
+.terms {
+    font-size: 70%;
+    text-decoration: none;
+}
+
+a {
+    width: 100%;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+/* Rodapé */
+#rodape {
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    background-color: #a0ded6;
+}
+
+#rodape a {
+    font-size: 90%;
+    color: #360b46;
+}
+
+#idiomas {
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+}
+
+#links {
+    margin-top: 3vh;
+}
+
+#idiomas, #links {
+    width: 70%;
+    
+    display: inline-block;
+    text-align: left;
+}
+
+.links {
+    margin-right: 3%;
+    line-height: 5vh;
+}
+
+.idiomas {
+    margin-right: 3%;
+}
+
+hr {
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    width: 70%;
+    outline: 0;
+    border: 0.1vh solid rgb(4, 43, 25);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+    /* Cabeçalho */
+    header {
+       height: auto;
+    }
+    #content-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #content-header h1 {
+        margin: 2vh 0;
+    }
+    #form .form-group :nth-child(2)  {
+        width: 28vw;
+        height: 5.5vh;
+        padding: 2%;
+        font-size: 70%;
+     }
+    #form form, .form-group{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2vh;
+    }
+    .form-group {
+        margin-bottom: 2vh;
+    }
+
+    /* Conteudo Principal */
+    #content {
+        flex-direction: column;
+    }
+    #texto-content, #cadastro {
+        width: 100%;
+    }
+    #texto-cadastro {
+        display: inline-block;
+    }
+    #texto-cadastro h1 {
+        margin-bottom: 2vh;
+    }
+
+    /* Cadastro */
+
+    #form-cadastro {
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form-cadastro form{
+        text-align: center;
+    }
+
+    #date-group {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #select-data {
+    }
+
+    #date-group select {
+        font-size: 100%;
+        margin-bottom: 1vh;
+        margin: 1vh 0;
+    }
+
+    #text-date {
+        text-align: center;
+    }
+
+    #submit {
+        width: 100%;
+        text-align: center;
+        height: 5vh;
+        margin: 2vh auto;
+    }
+
+    input[value="Cadastre-se"] {
+        display: inline-block;
+    }
+
+    #label-data {
+        margin-top: 3% auto;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #form .form-group :nth-child(2)  {
+        width: 50vw;
+        height: 5.5vh;
+        padding: 2%;
+        font-size: 70%;
+     }
+     #forgot-passwork {
+        margin-top: 1.8vh;
+     }
+}
